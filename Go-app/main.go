@@ -5,6 +5,18 @@ import (
 	"net/http"
 )
 
+func HelloWorld() string {
+    return "Hello, World!"
+}
+
+func Add(a, b int) int {
+    return a + b
+}
+
+func Subtract(a, b int) int {
+    return a - b
+}
+
 func main() {
 	// Define the port to listen on
 	port := ":8000" // Change this to the desired port number
