@@ -1,6 +1,13 @@
 pipeline {
     agent any
+
     stages {
+        stage('Checkout') {
+            steps {
+                // Checkout source code from your Git repository
+                git 'https://github.com/AnkushPal98/Devops-Assignment-Inc42.git'
+            }
+        }
         stage('Build') {
             steps {
                 echo "Build stage"
